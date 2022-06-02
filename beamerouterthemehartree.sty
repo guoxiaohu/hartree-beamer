@@ -1,4 +1,4 @@
-% Jerome Belleman <Jerome.Belleman@cern.ch>, March 2015
+% Xiaohu Guo <xiaohu.guo@stfc.ac.uk>, June 2022
 
 \usepackage{calc}
 \mode<presentation>
@@ -14,7 +14,7 @@
 
 \newlength{\logowd}
 \setlength{\logowd}{14.046mm * \ratio{128mm}{254mm}}
-\pgfdeclareimage[width=\logowd]{smalllogo}{cern-logo}
+\pgfdeclareimage[width=\logowd]{smalllogo}{hartree-logo}
 \newlength{\logolw}
 \setlength{\logolw}{\footlinedp - 2.392mm * \ratio{128mm}{254mm}}
 
@@ -24,9 +24,9 @@
 \newlength{\numberwd}
 \setlength{\numberwd}{20pt}
 
-\defbeamertemplate*{footline}{cern}
+\defbeamertemplate*{footline}{hartree}
 {
-  \ifbeamer@cern@cover
+  \ifbeamer@hartree@cover
   \else
     \begin{beamercolorbox}[wd=\paperwidth,dp=\footlinedp,ht=\footlineht,
                            leftskip=\footlinesk,
@@ -40,7 +40,7 @@
   \fi
 }
 
-\defbeamertemplate*{frametitle}{cern}
+\defbeamertemplate*{frametitle}{hartree}
 {
   \vspace{16pt}
   % Set depth=0pt to avoid body position from depending on whether title
@@ -51,9 +51,9 @@
   \end{beamercolorbox}
 }
 
-\defbeamertemplate*{navigation symbols}{cern}{}
+\defbeamertemplate*{navigation symbols}{hartree}{}
 
-\defbeamertemplate*{frametitle continuation}{cern}{
+\defbeamertemplate*{frametitle continuation}{hartree}{
   (\insertcontinuationcountroman)
 }
 

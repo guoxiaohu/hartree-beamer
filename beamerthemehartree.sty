@@ -1,51 +1,49 @@
-% Jerome Belleman <Jerome.Belleman@cern.ch>, March 2015
+% Xiaohu Guo <xiaohu.guo@stfc.ac.uk>, June 2022
 
-% The size and position of graphical elements was rigorously computed/measured.
-% That of text not so much as I kept the default Beamer font, so I just
-% overlaid the official template to reach a result that's perceivably close.
+% created from CERN template
 
 \mode<presentation>
 
-\newif\ifbeamer@cern@cover
-\beamer@cern@coverfalse
+\newif\ifbeamer@hartree@cover
+\beamer@hartree@coverfalse
 
 \newlength{\titlelf}
 \setlength{\titlelf}{-9pt}
 
-\usefonttheme{cern}
-\usecolortheme{cern}
-\useinnertheme{cern}
-\useoutertheme{cern}
+\usefonttheme{hartree}
+\usecolortheme{hartree}
+\useinnertheme{hartree}
+\useoutertheme{hartree}
 
-\pgfdeclareimage[width=100pt]{frontlogo}{cern-logo}
-\pgfdeclareimage[width=62pt]{backlogo}{cern-logo}
+\pgfdeclareimage[width=100pt]{frontlogo}{hartree-logo}
+\pgfdeclareimage[width=62pt]{backlogo}{hartree-logo}
 
 \newcommand{\frontcover}{
-  \beamer@cern@covertrue
+  \beamer@hartree@covertrue
   {
-    \setbeamercolor{background canvas}{bg=cern}
+    \setbeamercolor{background canvas}{bg=hartree}
     \frame{
       \vspace{49pt}
       \centerline{\pgfuseimage{frontlogo}}
     }
   }
-  \beamer@cern@coverfalse
+  \beamer@hartree@coverfalse
 }
 
 \newcommand{\backcover}{
-  \beamer@cern@covertrue
+  \beamer@hartree@covertrue
   {
-    \setbeamercolor{background canvas}{bg=cern}
+    \setbeamercolor{background canvas}{bg=hartree}
     \frame{
       \vspace{105pt}
       \centerline{\pgfuseimage{backlogo}}
       \vspace{76pt}
       \centerline{%
-        \scriptsize\color{cern!50!white}\href{http://home.cern}{home.cern}
+        \scriptsize\color{hartree!50!white}\href{https://www.hartree.stfc.ac.uk/Pages/home.aspx}{home.hartree}
       }
     }
   }
-  \beamer@cern@coverfalse
+  \beamer@hartree@coverfalse
 }
 
 \mode
